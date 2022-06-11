@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Long+Cang&family=Nanum+Gothic:wght@400;700&display=swap"
+        rel="stylesheet" <link rel="stylesheet" href="css/reset.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css.map">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animate1.css">
+    <title>Welldone</title>
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+    <link rel="manifest" href="favicons/site.webmanifest">
+    <link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+</head>
+
+<body class="active">
+    <div class="loader-wrapper">
+        <div class="loader">
+            <div class="loader-inner">
+                <div class="loader-inner">
+                    <div class="loader-inner"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <header class="shadow-sm header">
+        <nav class="nav header-menu" id="mob-menu">
+            <ul>
+                <li class="wow bounceInUp menu-nav-item"><a href="#about" class="nav-link">О нас</a></li>
+                <li class="wow animate__fadeIn menu-nav-item"><a href="#services" class="nav-link">Услуги/цени</a></li>
+                <li class="menu-nav-item"><a href="#application" class="nav-link">Заявка</a></li>
+                <li class="menu-nav-item"><a href="#questions" class="nav-link">Вопросы</a></li>
+                <li class="menu-nav-item"><a href="#contact" class="nav-link">Контакты</a></li>
+            </ul>
+        </nav>
+        <div class="header-bg">
+            <div class="container-md">
+                <div class="d-flex header-wrapper">
+                    <div class="wow fadeInLeft burger" id="burger">
+                        <span></span>
+                    </div>
+                    <div class="wow fadeIn logo">
+                        <img src="img/logo.svg" alt="logo">
+                    </div>
+                    <ul class="nav navbar-text header-nav">
+                        <li class="wow fadeInDown nav-item"><a href="#about" class="nav-link">О нас</a></li>
+                        <li class="wow fadeInDown nav-item"><a href="#services" class="nav-link">Услуги/цени</a></li>
+                        <li class="wow fadeInDown nav-item"><a href="#application" class="nav-link">Заявка</a></li>
+                        <li class="wow fadeInDown nav-item"><a href="#questions" class="nav-link">Вопросы</a></li>
+                        <li class="wow fadeInDown nav-item"><a href="#contact" class="nav-link">Контакты</a></li>
+                    </ul>
+                    <a href="" class="wow fadeInRight btn btn-lg header-btn" data-bs-toggle="modal" data-bs-target="#callModal">Заказать
+                        звонок</a>
+                    <a href="" class="wow fadeInRight header-phone" data-bs-toggle="modal" data-bs-target="#callModal"><img
+                    src="img/phone-call.svg" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="main-filter">
+            <div class="container-md">
+                <div class="d-flex justify-content-between align-items-center main-wrapper">
+                    <div class="wow fadeInLeft main-content">
+                        <div class="main-text">
+                            <div class="autoservices">
+                                <p class="mb-0">Автосервыс</p>
+                            </div>
+                            <h1 class="title">Welldone</h1>
+                            <p class="subtitle">Предоставляем услуги по техническому<br> обслуживанию автомобилей</p>
+                        </div>
+                        <div class="main-btn-wrapper">
+                            <a href="#application" class="btn btn-lg bl-btn main-btn">Записаться</a>
+                        </div>
+                    </div>
+                    <div class="wow fadeInRight main-numbers">
+                        <div class="main-numbers-block d-flex align-items-center">
+                            <p class="main-number counter" id="counter">7</p>
+                            <p class="main-numbers-text">лет на рынке услуг</p>
+                        </div>
+                        <div class="main-numbers-block d-flex align-items-center">
+                            <p class="main-number counter" id="counter">3549</p>
+                            <p class="main-numbers-text">довольных услугами клиентов</p>
+                        </div>
+                        <div class="main-numbers-block d-flex align-items-center">
+                            <p class="main-number counter" id="counter">2</p>
+                            <p class="main-numbers-text">номинации "Лучший автосервис"<br> всероссийского конкурса</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-arrow-wrapper d-flex justify-content-center">
+                    <a href="#about" class="wow bounceInUp main-arrow-down">
+                        <img src="img/down-arrow.svg" alt="down-arrow">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <section class="about" id="about">
+        <div class="container-md">
+            <div class="about-wrapper">
+                <h2 class="wow fadeInDown section-title">Почему выбирають нас?</h2>
+                <ul class="row row-cols-lg-2 g-4 specifics">
+                    <li class="wow bounceIn d-flex align-items-center specific">
+                        <img src="img/guarantee-certificate.svg" alt="">
+                        <div class="specific-content">
+                            <h5 class="specific-title">Гарантия</h5>
+                            <p class="specific-text">До 12 месяцев</p>
+                        </div>
+                    </li>
+                    <li class="wow bounceIn d-flex align-items-center specific">
+                        <img src="img/experience.svg" alt="">
+                        <div class="specific-content">
+                            <h5 class="specific-title">Опыт</h5>
+                            <p class="specific-text">Компететний штат механиков</p>
+                        </div>
+                    </li>
+                    <li class="wow bounceIn d-flex align-items-center specific">
+                        <img src="img/quality.svg" alt="">
+                        <div class="specific-content">
+                            <h5 class="specific-title">Качество</h5>
+                            <p class="specific-text">Запчасти от официальних дилеров</p>
+                        </div>
+                    </li>
+                    <li class="wow bounceIn d-flex align-items-center specific">
+                        <img src="img/24-hours.svg" alt="">
+                        <div class="specific-content">
+                            <h5 class="specific-title">24 часа</h5>
+                            <p class="specific-text">Роботаем круглосуточно</p>
+                        </div>
+                    </li>
+                    <li class="wow bounceIn d-flex align-items-center specific">
+                        <img src="img/back-in-time.svg" alt="">
+                        <div class="specific-content">
+                            <h5 class="specific-title">Точно в срок</h5>
+                            <p class="specific-text">Выполним роботу без задержок</p>
+                        </div>
+                    </li>
+                    <li class="wow bounceIn d-flex align-items-center specific">
+                        <img src="img/reliability.svg" alt="">
+                        <div class="specific-content">
+                            <h5 class="specific-title">Надежность</h5>
+                            <p class="specific-text">Честно выполняем свою роботу</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="services" id="services" data-rellax-zindex="5">
+        <div class="services-bg"></div>
+        <div class="wow fadeInRight services-key" data-wow-duration="3s" data-wow-delay="1s"></div>
+        <div class="circle-1"></div>
+        <div class="circle-2"></div>
+        <div class="container-lg">
+            <div class="services-wrapper">
+                <h2 class="wow fadeInDown section-title">Услуги и цены</h2>
+                <div class="d-flex align-items-center price-list">
+                    <ul class="nav d-flex align-items-center tabs" role="tablist">
+                        <li class="wow fadeInLeft nav-item">
+                            <a class="nav-link" role="tab" onclick="openSlider(event, 'engine')"
+                                id="defaultOpen">Двигатель</a>
+                        </li>
+                        <li class="wow fadeInLeft nav-item">
+                            <a class="nav-link" role="tab" onclick="openSlider(event, 'basket')">Кузов</a>
+                        </li>
+                        <li class="wow fadeInLeft nav-item">
+                            <a class="nav-link" role="tab" onclick="openSlider(event, 'kpp')">КПП/АКПП</a>
+                        </li>
+                        <li class="wow fadeInLeft nav-item">
+                            <a class="nav-link" role="tab" onclick="openSlider(event, 'running')">Ходова
+                                и<br> комплектующие</a>
+                        </li>
+                    </ul>
+                    <div class="tabs-content">
+                        <div class="swiper-container slider-engine" id="engine">
+                            <div class="swiper-wrapper">
+                                <div class="wow fadeIn swiper-slide service">
+                                    <img data-src="img/engine.jpg" alt="engine" class="swiper-lazy">
+                                    <div class="swiper-lazy-preloader"></div>
+                                    <h5 class="service-title">Диагностика</h5>
+                                    <p class="price">400 руб.</p>
+                                    <a href="" class="btn bl-btn service-btn">Записаться</a>
+                                </div>
+                                <div class="wow fadeIn swiper-slide service">
+                                    <img data-src="img/engine.jpg" alt="engine" class="swiper-lazy">
+                                    <div class="swiper-lazy-preloader"></div>
+                                    <h5 class="service-title">Диагностика</h5>
+                                    <p class="price">400 руб.</p>
+                                    <a href="" class="btn bl-btn service-btn">Записаться</a>
+                                </div>
+                                <div class="wow fadeIn swiper-slide service">
+                                    <img data-src="img/engine.jpg" alt="engine" class="swiper-lazy">
+                                    <div class="swiper-lazy-preloader"></div>
+                                    <h5 class="service-title">Диагностика</h5>
+                                    <p class="price">400 руб.</p>
+                                    <a href="" class="btn bl-btn service-btn">Записаться</a>
+                                </div>
+                            </div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                        </div>
+                        <div class="swiper-container slider-basket" id="basket">
+                            <div class="swiper-wrapper">
+                                <div class="wow fadeIn swiper-slide service">
+                                    <img data-src="img/engine.jpg" alt="engine" class="swiper-lazy">
+                                    <div class="swiper-lazy-preloader"></div>
+                                    <h5 class="service-title">Кузов</h5>
+                                    <p class="price">400 руб.</p>
+                                    <a href="" class="btn bl-btn service-btn">Записаться</a>
+                                </div>
+                                <div class="wow fadeIn swiper-slide service">
+                                    <img data-src="img/engine.jpg" alt="engine" class="swiper-lazy">
+                                    <div class="swiper-lazy-preloader"></div>
+                                    <h5 class="service-title">Диагностика</h5>
+                                    <p class="price">400 руб.</p>
+                                    <a href="" class="btn bl-btn service-btn">Записаться</a>
+                                </div>
+                                <div class="wow fadeIn swiper-slide service">
+                                    <img data-src="img/engine.jpg" alt="engine" class="swiper-lazy">
+                                    <div class="swiper-lazy-preloader"></div>
+                                    <h5 class="service-title">Диагностика</h5>
+                                    <p class="price">400 руб.</p>
+                                    <a href="" class="btn bl-btn service-btn">Записаться</a>
+                                </div>
+                            </div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+
+                        </div>
+                        <div class="swiper-container slider-engine" id="kpp">
+                            <div class="swiper-wrapper">
+                                <div class="wow fadeIn swiper-slide service">
+                                    <img data-src="img/engine.jpg" alt="engine" class="swiper-lazy">
+                                    <div class="swiper-lazy-preloader"></div>
+                                    <h5 class="service-title">Диагностика</h5>
+                                    <p class="price">350 руб.</p>
+                                    <a href="" class="btn bl-btn service-btn">Записаться</a>
+                                </div>
+                                <div class="wow fadeIn swiper-slide service">
+                                    <img data-src="img/engine.jpg" alt="engine" class="swiper-lazy">
+                                    <div class="swiper-lazy-preloader"></div>
+                                    <h5 class="service-title">Диагностика</h5>
+                                    <p class="price">400 руб.</p>
+                                    <a href="" class="btn bl-btn service-btn">Записаться</a>
+                                </div>
+                                <div class="wow fadeIn swiper-slide service">
+                                    <img data-src="img/engine.jpg" alt="engine" class="swiper-lazy">
+                                    <div class="swiper-lazy-preloader"></div>
+                                    <h5 class="service-title">Диагностика</h5>
+                                    <p class="price">400 руб.</p>
+                                    <a href="" class="btn bl-btn service-btn">Записаться</a>
+                                </div>
+                            </div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+
+                        </div>
+                        <div class="swiper-container slider-engine" id="running">
+                            <div class="swiper-wrapper">
+                                <div class="wow fadeIn swiper-slide service">
+                                    <img data-src="img/engine.jpg" alt="engine" class="swiper-lazy">
+                                    <div class="swiper-lazy-preloader"></div>
+                                    <h5 class="service-title">Диагностика</h5>
+                                    <p class="price">600 руб.</p>
+                                    <a href="" class="btn bl-btn service-btn">Записаться</a>
+                                </div>
+                                <div class="wow fadeIn swiper-slide service">
+                                    <img data-src="img/engine.jpg" alt="engine" class="swiper-lazy">
+                                    <div class="swiper-lazy-preloader"></div>
+                                    <h5 class="service-title">Диагностика</h5>
+                                    <p class="price">400 руб.</p>
+                                    <a href="" class="btn bl-btn service-btn">Записаться</a>
+                                </div>
+                                <div class="wow fadeIn swiper-slide service">
+                                    <img data-src="img/engine.jpg" alt="engine" class="swiper-lazy">
+                                    <div class="swiper-lazy-preloader"></div>
+                                    <h5 class="service-title">Диагностика</h5>
+                                    <p class="price">400 руб.</p>
+                                    <a href="" class="btn bl-btn service-btn">Записаться</a>
+                                </div>
+                            </div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="application" id="application">
+        <div class="app-bg"></div>
+        <div class="container-lg">
+            <img src="img/carMechanic.png" alt=" " class="app-img">
+            <div class="app-content">
+                <div class="app-text">
+                    <h2 class="wow fadeInDown section-title">Форма заявки</h2>
+                    <p class="wow fadeIn app-subtitle">Оставьте свои данные, укажите причину обращения, выберите дату и наш
+                        сотрудник свяжеться с Вами для согласования времени оказания услуги</p>
+                </div>
+                <form action="" class="app-form">
+                    <div class="inputs d-flex justify-content-between align-items-center wrap">
+                        <input type="text" class="wow bounceInLeft input" placeholder="Ваше имя" required>
+                        <input type="text" class="wow bounceInRight input" placeholder="Ваша фамилия" required>
+                        <input type="text" class="wow bounceInLeft input" placeholder="Ваш номер" required>
+                        <input type="date" id="today" class="wow bounceInRight input" placeholder="выберите дату" min="2021-01-01"
+                            onfocus="(this.type='date')" required>
+                    </div>
+                    <textarea class="wow fadeInUp app-textarea" name="" id="" cols="30" rows="10" placeholder="Текст обращения"></textarea required>
+                    <button class="wow bounceIn btn bl-btn form-btn" type="submit">Записаться</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="questions" id="questions">
+        <div class="wow fadeIn questions-direct-key" data-wow-duration="3s" data-wow-delay="1s"></div>
+        <div class="wave wave-1">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#332626" fill-opacity="1" d="M0,160L60,149.3C120,139,240,117,360,133.3C480,149,600,203,720,234.7C840,267,960,277,1080,261.3C1200,245,1320,203,1380,181.3L1440,160L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path>
+            </svg>
+        </div>
+        <div class="container-lg">
+            <h2 class="wow fadeInDown section-title">Часто задаваемые вопросы</h2>
+            <div class="accordion" id="accordionExample">
+                <div class="wow bounceInLeft d-flex accordion-item-wrapper">
+                    <div class="question-mark"></div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="heading1">
+                          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                            Каким способом можно оплатить услугу?
+                          </button>
+                        </h2>
+                        <div id="collapse1" class="accordion-collapse collapse show" aria-labelledby="heading1" data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                            Вы можете произвести оплату <span>наличными</span>, через <span>терминал</span>, а также по номеру телефона через <span>мобилное приложение</span> с карти любого банка
+                          </div>
+                        </div>
+                      </div>
+                </div>
+                <div class="wow bounceInRight d-flex accordion-item-wrapper">
+                    <div class="question-mark"></div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="heading2">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="true" aria-controls="collapse2">
+                            Какие автомобили обслуживаете?
+                          </button>
+                        </h2>
+                        <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="heading2" data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                            Все
+                          </div>
+                        </div>
+                      </div>
+                </div>
+                <div class="wow bounceInLeft d-flex accordion-item-wrapper">
+                    <div class="question-mark"></div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="heading3">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="true" aria-controls="collapse3">
+                            Нужно ли самому покупать запчасти/материал?
+                          </button>
+                        </h2>
+                        <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="heading3" data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                            Ны, не треба
+                          </div>
+                        </div>
+                      </div>
+                </div>
+
+                <div class="wow bounceInRight d-flex accordion-item-wrapper">
+                    <div class="question-mark"></div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="heading4">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="true" aria-controls="collapse4">
+                            Есть ли какой-нибудь сервис для клиентов
+                          </button>
+                        </h2>
+                        <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="heading4" data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                            Так, есть
+                          </div>
+                        </div>
+                      </div>
+                </div>
+
+                <div class="wow bounceInLeft d-flex accordion-item-wrapper">
+                    <div class="question-mark"></div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="heading5">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="true" aria-controls="collapse5">
+                            Акции или спецыальное предложения?
+                          </button>
+                        </h2>
+                        <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="heading5" data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                            Есть
+                          </div>
+                        </div>
+                      </div>
+                </div>
+
+                <div class="wow bounceInRight d-flex accordion-item-wrapper">
+                    <div class="question-mark"></div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="heading6">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse6" aria-expanded="true" aria-controls="collapse6">
+                            Что входить в услугу "Рихтовка кузова"?
+                          </button>
+                        </h2>
+                        <div id="collapse6" class="accordion-collapse collapse" aria-labelledby="heading6" data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                            Все
+                          </div>
+                        </div>
+                      </div>
+                </div>
+
+                <div class="wow bounceInLeft d-flex accordion-item-wrapper">
+                    <div class="question-mark"></div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="heading7">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse7" aria-expanded="true" aria-controls="collapse7">
+                            Нужно ли заказать запчасти?
+                          </button>
+                        </h2>
+                        <div id="collapse7" class="accordion-collapse collapse" aria-labelledby="heading7" data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                            Не
+                          </div>
+                        </div>
+                      </div>
+                </div>
+              </div>
+        </div>
+        <div class="wave wave-2">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#332626" fill-opacity="1" d="M0,128L34.3,138.7C68.6,149,137,171,206,186.7C274.3,203,343,213,411,208C480,203,549,181,617,149.3C685.7,117,754,75,823,96C891.4,117,960,203,1029,250.7C1097.1,299,1166,309,1234,266.7C1302.9,224,1371,128,1406,80L1440,32L1440,0L1405.7,0C1371.4,0,1303,0,1234,0C1165.7,0,1097,0,1029,0C960,0,891,0,823,0C754.3,0,686,0,617,0C548.6,0,480,0,411,0C342.9,0,274,0,206,0C137.1,0,69,0,34,0L0,0Z"></path>
+            </svg>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="contact-bg"></div>
+        <div class="container-lg">
+            <div class="contact-content">
+                <h2 class="wow fadeInDown section-title">Наши контакты</h2>
+                <div class="address d-flex align-items-center">
+                    <ul class="address-content">
+                        <li class="wow bounceInLeft d-flex align-items-center address-li">
+                            <img src="img/phone-call.svg" alt="">
+                            <a href="tel:000-000-0000" class="number">8 (800) 326-84-14</a>
+                        </li>
+                        <li class="wow bounceInLeft d-flex align-items-center address-li">
+                            <img src="img/gmail.svg" alt="">
+                            <a href="mailto:welldone-auto@gmail.com?subject = Feedback&body = Message">welldone_auto@gmail.com</a>
+                        </li>
+                        <li class="wow bounceInLeft d-flex align-items-center address-li">
+                            <img src="img/placeholder.svg" alt="">
+                            <a href="http://maps.google.com/maps?f=q&source=s_q&hl=en&q=1200+Pennsylvania+Ave+SE,+Washington,+District+of+Columbia,+20003&sll=37.0625,-95.677068&sspn=44.118686,114.169922&ie=UTF8&cd=1&geocode=FT5MUQIdIDlp-w&split=0&ll=38.882147,-76.99017&spn=0.01064,0.027874&z=16&iwloc=A" target="blank">ул. Баумана <span class="number">13/3</span></a>
+                        </li>
+                    </ul>
+                    <div class="wow bounceIn map"><img src="img/map.png" alt=""></div>
+                </div>
+                <div class="contact-socials">
+                    <h6 class="wow fadeInUp">Мы в соц. сетях:</h6>
+                    <ul class="d-flex align-items-center justify-content-center">
+                        <li class="wow bounceIn social-link-li" data-wow-duration="1s" data-wow-delay=".5s"><a href="https://www.instagram.com" target="blank" class="social-link"><img src="img/instagram.svg" alt="instagram" title="Instagram"></a></li>
+                        <li class="wow bounceIn social-link-li" data-wow-duration="1s" data-wow-delay="1s"><a href="https://web.telegram.org" target="blank" class="social-link"><img src="img/telegram.svg" alt="telegram" title="Telegram"></a></li>
+                        <li class="wow bounceIn social-link-li" data-wow-delay="1.5s"><a href="https://vk.com" target="blank" class="social-link"><img src="img/vk.svg" alt="vk" title="ВКонтакте"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container-lg">
+            <div class="d-flex justify-content-center footer-wrapper">
+                <div class="d-flex justify-content-between footer-links-wrapper">
+                    <div class="footer-contact">
+                        <h6 class="wow bounceInUp footer-title">По всем вопросам:</h6>
+                        <p class="wow bounceInUp number">8 (800) 326-84-14</p>
+                        <p class="wow bounceInUp">welldone_auto@gmail.com</p>
+                        <div class="wow bounceInUp logo">
+                            <img src="img/logo.svg" alt="logo">
+                        </div>
+                    </div>
+                    <div class="footer-menu">
+                        <h6 class="wow bounceInUp footer-title">Меню навигациии:</h6>
+                        <ul class="nav footer-nav">
+                            <li class="wow bounceInUp"><a href="#about">О нас</a></li>
+                            <li class="wow bounceInUp"><a href="#services">Услуги/цени</a></li>
+                            <li class="wow bounceInUp"><a href="#application">Заявка</a></li>
+                            <li class="wow bounceInUp"><a href="#questions">Вопросы</a></li>
+                            <li class="wow bounceInUp"><a href="#contact">Контакты</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="copyright-wrapper">
+                    <p class="wow bounceInUp copyright">Политика конфиденциальности</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal fade" id="callModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Заказать звонок</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form action="" class="modal-form">
+                  <input type="text" placeholder="Введите свое имя" required>
+                  <input type="tel" class="number" placeholder="Введите свой номер" required>
+                  <input type="time" min="09:00" max="22:00" class="number" id="todayTime" required>
+                  <button class="btn" type="submit">Заказть</button>
+              </form>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"
+        integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous">
+    </script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <script>
+        document.getElementById("defaultOpen").click();
+
+        $('.counter').counterUp({
+            delay: 10,
+            time: 900
+        });
+    </script>
+
+</body>
+
+</html>
